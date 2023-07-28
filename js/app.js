@@ -1,36 +1,42 @@
-window.onload = (e) => {
-    // document.querySelector('form').addEventListener('submit', (e) => {
-    //     e.preventDefault()
-
-        const userInput = document.querySelector('input[type="text').value
-        console.log(userInput)
-
-        fetch(`https://swapi.dev/api/people/?page2=${userInput}`).then((data) => {
+    window.onload = (e) => {
+        const getCharInfo = () => {
+        fetch("https://swapi.dev/api/people").then((data) => {
             return data.json()
-        }, (err) => {
-            console.log(err, ' ERROR')
-        }).then((char) => {
-            const charArrays = char.results
-            for(let i = 0; i < charArrays.length; i++) {
-                let names = charArrays[i].name
-                console.log(names)
-            }
-             console.log(charArrays)
-            // console.log(char.results.name)
-        const getNames = () => {
-           console.log(char.results)
-        } 
-            document.querySelector('#Char').innerHTML = char.results.name
+            }, (err) => {
+                console.log(err, ' ERROR')
+            }).then((char) => {
+                const userInput = document.querySelector('#input').value
+                // console.log(userInput)
+                // console.log(char.results)
+                const getNames = () => {
+                    const charArrays = char.results
+                    // console.log(charArrays)
+                    for(let i = 0; i < charArrays.length; i++) {
+                        let names = charArrays[i].name
+                        const charObjects = charArrays[i]
+                        // console.log(charObjects)
+                        // console.log(names)
+                        if(names.toLowerCase().includes(userInput.toLowerCase())) {
+                            document.querySelector('#name').innerText = charObjects.name
+                            document.querySelector('#height').innerText = charObjects.height
+                            document.querySelector('#mass').innerText = charObjects.mass
+                            document.querySelector('#hair').innerText = charObjects.hair_color
+                            document.querySelector('#skin').innerText = charObjects.skin_color
+                        }
+                    } 
+                }
+                getNames()
+            })
+        }
+        getCharInfo()
+         document.querySelector('#submit').addEventListener('click', (e) => {
+            e.preventDefault()
+            getCharInfo()
         })
-        // getNames()
-    // })
-}
+    }
 
 
-
-
-
-
+   
 
 // fetch("https://swapi.dev/api/people/") 
 // .then(response => response.json()) 
