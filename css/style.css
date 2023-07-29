@@ -1,6 +1,226 @@
-* {
-    background-color: bisque;
+body {
+    background-image: url(https://wallpapercave.com/dwp2x/wp3614483.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /* color: black; */
+    
 }
 h1 {
     color: black;
 }
+
+ul img {
+    display: flex;
+    width: 160px;
+    
+}
+ul {
+    display: flex;
+    flex-direction: row;
+}
+li {
+    display: flex;
+    flex-direction: column; 
+    width: fit-content;
+    padding: 20px;
+}
+#char1 {
+    background-image: url("https://wallpaperaccess.com/full/714043.jpg");
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    width: 160px;
+    color: white;
+}
+#char2 {
+    background-image: url("https://static.wikia.nocookie.net/swcp/images/3/39/250px-C3PO_EP3.jpg/revision/latest?cb=20110719172536&path-prefix=es" );
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    width: 160px;
+    color: white;  
+}
+#char3 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSuwFB6EleicUdoaYASTI54hw4_42-Z6wQoEGPvek0CUYgTGc5EC9i9eniobFgxKc5Mn8&usqp=CAU");
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    width:  160px;
+    color: white;
+}
+#char4 {
+    background-image: url("https://wallpaperaccess.com/thumb/1609117.jpg");
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    width:  160px;
+    color: white;
+}
+#char5 {
+    background-image: url(https://cdn.theatlantic.com/thumbor/-NJWYD1GE4xZblLGX0cw7WkG7XU=/0x151:1600x1051/1600x900/media/img/mt/2014/04/leia/original.jpg);
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    width:  160px;
+    color: white;
+}
+#char6 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7_Zdn1SZLZFSDRQBmslV8QZ--0KC1iQYXZA&usqp=CAU);
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    width:  160px;
+    color: black;
+}
+#char7 {
+    background-image: url(https://static.wikia.nocookie.net/headhuntersholosuite/images/1/17/Beru_Lars_001.jpg/revision/latest?cb=20100317024358);
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    width:  160px;
+    color: white;
+}
+#char8 {
+    background-image: url(https://lumiere-a.akamaihd.net/v1/images/r5-d4_main_image_7d5f078e.jpeg?region=374%2C0%2C1186%2C666);
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    width:  160px;
+    color: white;
+}
+#char9 {
+    background-image: url(https://i0.wp.com/www.piratesandprincesses.net/wp-content/uploads/2022/03/Biggs-Darklighter.jpg?resize=696%2C392);
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    width:  160px;
+    color: white;
+}
+#char10 {
+    background-image: url(https://cdn.wallpapersafari.com/67/58/DXq6WS.jpg);
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    width:  160px;
+    color: white;
+}
+
+
+#char1, #char2, #char3, #char4, #char5, #char6, #char7, #char8, #char9, #char10 {
+    opacity: 0;
+    animation: fadeIn 7s ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
+
+
+/* #char1 {
+    background-image: url("https://wallpaperaccess.com/full/714043.jpg");
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    width: 160px;
+    color: white;
+}
+#char2 {
+    background-image: url("https://static.wikia.nocookie.net/swcp/images/3/39/250px-C3PO_EP3.jpg/revision/latest?cb=20110719172536&path-prefix=es" );
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    width: 160px;
+    color: white;  
+}
+#char3 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSuwFB6EleicUdoaYASTI54hw4_42-Z6wQoEGPvek0CUYgTGc5EC9i9eniobFgxKc5Mn8&usqp=CAU");
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    width:  160px;
+    color: white;
+}
+#char4 {
+    background-image: url("https://wallpaperaccess.com/thumb/1609117.jpg");
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    width:  160px;
+    color: white;
+}
+#char5 {
+    background-image: url(https://cdn.theatlantic.com/thumbor/-NJWYD1GE4xZblLGX0cw7WkG7XU=/0x151:1600x1051/1600x900/media/img/mt/2014/04/leia/original.jpg);
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    width:  160px;
+    color: white;
+}
+#char6 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7_Zdn1SZLZFSDRQBmslV8QZ--0KC1iQYXZA&usqp=CAU);
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    width:  160px;
+    color: black;
+}
+#char7 {
+    background-image: url(https://static.wikia.nocookie.net/headhuntersholosuite/images/1/17/Beru_Lars_001.jpg/revision/latest?cb=20100317024358);
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    width:  160px;
+    color: white;
+}
+#char8 {
+    background-image: url(https://lumiere-a.akamaihd.net/v1/images/r5-d4_main_image_7d5f078e.jpeg?region=374%2C0%2C1186%2C666);
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    width:  160px;
+    color: white;
+}
+#char9 {
+    background-image: url(https://i0.wp.com/www.piratesandprincesses.net/wp-content/uploads/2022/03/Biggs-Darklighter.jpg?resize=696%2C392);
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    width:  160px;
+    color: white;
+}
+#char10 {
+    background-image: url(https://cdn.wallpapersafari.com/67/58/DXq6WS.jpg);
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    width:  160px;
+    color: white;
+} */
