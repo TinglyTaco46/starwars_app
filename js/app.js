@@ -28,7 +28,6 @@
                 getNames()
             })
         }
-        getCharInfo()
          document.querySelector('#submit').addEventListener('click', (e) => {
             e.preventDefault()
             getCharInfo()
