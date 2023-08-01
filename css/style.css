@@ -221,4 +221,42 @@ span {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+    .container ul{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+    }
+    #char1, #char2, #char3, #char4, #char5, #char6, #char7, #char8, #char9, #char10 {
+        width: 60px;
+        height: 60px;
+    }
+    .modal-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: lightgrey;
+        margin: 15% auto;
+        padding: 10px;
+        border: 1px solid grey;
+        width: 350px;
+        max-width: 450px;
+        border-radius: 5px;
+        position: fixed;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%);
+    }
+    .footer-bottom li {
+        right: 8.5%;
+    }
+}
 
+@media screen and (max-width: 1366px) {
+    .modal-content {
+        right: 50%;
+    }
+}
