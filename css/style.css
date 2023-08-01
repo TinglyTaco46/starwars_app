@@ -4,6 +4,8 @@ body {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    
+
 }
 h1 {
     color: black;
@@ -169,13 +171,6 @@ d2 {
     justify-content: space-evenly;
     color: black;
 }
- .searchBar {
-    display: flex;
-} 
-span {
-    margin: 0 auto;
-}
-
 .modal {
     display: none;
     position: fixed;
@@ -252,11 +247,5 @@ span {
     }
     .footer-bottom li {
         right: 8.5%;
-    }
-}
-
-@media screen and (max-width: 1366px) {
-    .modal-content {
-        right: 50%;
     }
 }
