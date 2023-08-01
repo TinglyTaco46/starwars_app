@@ -1,1 +1,2 @@
-# star_project
+# starwars_app
+
