@@ -12,40 +12,47 @@
    <h1> Star Wars Characters</h1>
 
   <form>
-    <input id="input" type="text" placeholder="Characters" />
-    <input id = "submit" type= "submit" value="Get Characters Info" />
+    <div class="modal" id="charModal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2 id="modalName"></h2>
+        <p><strong>Height:</strong> <span id="modalHeight"></span></p>
+        <p><strong>Mass:</strong> <span id="modalMass"></span></p>
+        <p><strong>Hair Color</strong> <span id="modalHair"></span></p>
+        <p><strong>Skin Color</strong> <span id="modalSkin"></span></p>
+        <p><strong>Birth Year</strong> <span id="modalBirth"></span></p>
+        <p><strong>Eye Color</strong> <span id="modalEye"></span></p>
+      </div>
+    </div>
 
-    <d1> 
-        <dt>Name</dt>
-        <dd id="name"></dd>
-        
-        <dt>Height</dt>
-        <dd id="height"></dd>
-
-        <dt>Mass</dt>
-        <dd id="mass"></dd>
-
-        <dt>Hair Color</dt>
-        <dd id="hair"></dd>
-
-        <dt>Skin Color</dt>
-        <dd id="skin"></dd>
-    </d1>
-  </form>
+  <div class="container">        
     <ul>
-        <li id="char1">Luke Skywalker</li>
-        <li id="char2">C-3PO</li>
-        <li id="char3">R2-D2</li>
-        <li id="char4">Darth Vader</li>
-        <li id="char5">Leia Organa</li>      
+      <li id="char1">Luke Skywalker</li>
+      <li id="char2">C-3PO</li>
+      <li id="char3">R2-D2</li>
+      <li id="char4">Darth Vader</li>
+      <li id="char5">Leia Organa</li>      
     </ul>
-  <ul>
-    <li id="char6">Owen Lars</li>
-    <li id="char7">Beru Whitesun lars</li>
-    <li id="char8">R5-D4</li>
-    <li id="char9">Biggs Darklighter</li>
-    <li id="char10">Obi-Wan Kenobi</li>   
-  </ul>
+  </div>
+  <div class="container">
+    <ul>
+      <li id="char6">Owen Lars</li>
+      <li id="char7">Beru Whitesun lars</li>
+      <li id="char8">R5-D4</li>
+      <li id="char9">Biggs Darklighter</li>
+      <li id="char10">Obi-Wan Kenobi</li>   
+    </ul>
+  </div>  
+  <footer>
+    <div class="footer-bottom">
+      <ul>
+        <li><a href="https://www.starwars.com/films">Movies</a></li>
+        <li><a href="https://www.starwars.com/databank">Characters</a></li>
+        <li><a href="https://www.linkedin.com/in/christopher-chacon-743025286/">linkedin</a></li>
+        <li><a href="https://github.com/TinglyTaco46">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
 
