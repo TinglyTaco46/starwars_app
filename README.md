@@ -2,7 +2,7 @@
 For the approach I took was to first make sure that the api I used was working and was able to pull the data that I needed 
 Once that was finised I wanted to add and style the imgages that I wanted 
 After I got all this my next step was to animate it
-Once my css and animation were done I went back into my javascript too change my method giving the images and evventlistneer and a modal to display the information when the picture was click on. 
+Once my css and animation were done I went back into my javascript too change my method giving the images an eventlistner and a modal to display the information when the picture was click on. 
 My next step was to push it through netlify so I can find any errors in my codes.
 Website link 
 effulgent-hotteok-9d3a8c.netlify.app
