@@ -14,6 +14,10 @@ h1 {
     font-size: 50px;
     font-style: italic;
 }
+h2 {
+    display: flex;
+    justify-content: center;
+}
 
 ul img {
     display: flex;
